@@ -14,7 +14,7 @@ public class Main {
 
   public static void main(String[] args) throws ImageProcessingException, IOException {
     
-    var path = Path.of(System.getProperty("user.dir"), "Maltese.png");
+    var path = Path.of(System.getProperty("user.dir"), "twhis.png");
     var metadata = ImageMetadataReader.readMetadata(path.toFile());
     var date_metadata_ext = metadata.getFirstDirectoryOfType(FileSystemDirectory.class)
             .getDate(FileSystemDirectory.TAG_FILE_MODIFIED_DATE).toInstant();
